@@ -1,0 +1,8 @@
+# Here I have created an image on ubuntu copy a local dir and run the python code
+
+FROM ubuntu
+copy . /lukesh
+RUN apt update
+RUN apt install python3 -y
+WORKDIR /lukesh
+RUN python3 1.py
